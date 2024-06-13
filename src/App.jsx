@@ -5,15 +5,17 @@ import BarraLateral from "./componentes/BarraLateral";
 import Banner from "./componentes/Banner";
 import bannerBackground from "./assets/banner.png";
 import Galeria from "./componentes/Galeria";
+import ModalZoom from "./componentes/ModalZoom";
 import { useState } from "react";
 
 import fotos from './fotos.json';
 
 
+
 const FundoGradiente = styled.div`
   background: linear-gradient(174.61deg, #041833 4.16%, #04244F 48%, #154580 96.76%);
   width: 100%;
-  height: 100vh;
+  height: 100%;
 `
 
 const AppContainer = styled.div`
@@ -22,7 +24,7 @@ const AppContainer = styled.div`
   max-width: 100%;
 `
 
-const Main = styled.main`
+const MainContainer = styled.main`
   display: flex;
   gap: 24px;
 `
@@ -41,7 +43,7 @@ const App = () => {
       <EstilosGlobais />
       <AppContainer>
         <Cabecalho />
-        <Main>
+        <MainContainer>
           <BarraLateral />
           <ConteudoGaleria>
             <Banner 
@@ -50,8 +52,9 @@ const App = () => {
             />
             <Galeria fotos={fotosDaGaleria} />
           </ConteudoGaleria>
-        </Main>
+        </MainContainer>
       </AppContainer>
+      <ModalZoom />
     </FundoGradiente>
   )
 }
