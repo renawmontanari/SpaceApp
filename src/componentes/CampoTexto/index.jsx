@@ -25,7 +25,7 @@ const CampoTextoEstilizado = styled.input`
     }
 
     @media (max-width: 480px) {
-        width: calc(100% - 70px); // Ajuste considerando o espaço do ícone
+        width: 410px;
     }
 `;
 

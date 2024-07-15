@@ -20,18 +20,36 @@ const FundoGradiente = styled.div`
 const AppContainer = styled.div`
   width: 1440px;
   margin: 0 auto;
-  max-width: 100%;
+  max-width: 1440px;
+  padding: 0 20px;
+
+  @media (max-width: 1440px) {
+      padding: 0 10px;
+  }
+
+  @media (max-width: 768px) {
+      padding: 0 8px;
+  }
 `
 
 const MainContainer = styled.main`
   display: flex;
   gap: 24px;
+
+  @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 16px;
+  }
 `
 
 const ConteudoGaleria = styled.section`
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 const App = () => {

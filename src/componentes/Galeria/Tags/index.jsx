@@ -6,12 +6,22 @@ const TagsContainer = styled.section`
     align-items: center;
     gap: 64px;
     margin-top: 56px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+        align-items: flex-start;
+    }
 `
 
 const TagTitulo = styled.h3`
     color: #D9D9D9;
     font-size: 24px;
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 20px;
+    }
 `;
 
 const Tag = styled.button`
@@ -27,12 +37,26 @@ const Tag = styled.button`
         &:hover {
         border-color: #C98CF1;
         }
+
+    @media (max-width: 768px) {
+        font-size: 18px;
+        padding: 10px;
+    }
 `;
 
 const Div = styled.div`
     display: flex;
     gap: 24px;
     justify-content: end;
+
+    @media (max-width: 768px) {
+        justify-content: flex-start;
+    }
+
+    @media (max-width: 480px) {
+        width: 410px;
+        overflow-y: auto;
+    }
 `
 
 const Tags = ({ setTag }) => {

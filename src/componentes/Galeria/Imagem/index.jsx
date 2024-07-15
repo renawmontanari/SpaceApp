@@ -29,12 +29,43 @@ const Figure = styled.figure`
             font-size: 16px;
         }
     }
+
+    @media (max-width: 768px) {
+        width: ${(props) => (props.$expandida ? '90%' : '100%')};
+
+        figcaption {
+            padding: 10px;
+
+            h3,
+            h4 {
+                font-size: 14px;
+            }
+        }
+    }
+
+    @media (max-width: 480px) {
+        width: 410px;
+
+        figcaption {
+            padding: 8px;
+
+            h3,
+            h4 {
+                font-size: 12px;
+            }
+        }
+    }
 `;
 
 const Rodape = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 `
 
 const Imagem = ({ foto, expandida = false, aoZoomSolicitado, aoAlternarFavorito }) => {

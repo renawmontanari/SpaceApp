@@ -6,6 +6,14 @@ const ListaEstilizada = styled.ul`
     padding: 0;
     margin: 0;
     width: 212px;
+
+    @media (max-width: 768px) {
+        width: 180px;
+    }
+
+    @media (max-width: 480px) {
+        width: 100%;
+    }
 `;
 
 const BarraLateral = () => {

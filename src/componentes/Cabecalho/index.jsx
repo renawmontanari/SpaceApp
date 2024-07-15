@@ -18,6 +18,7 @@ const HeaderEstilizado = styled.header`
     }
 
     @media (max-width: 480px) {
+        flex-direction: column;
         padding: 20px 0;
         img {
             max-width: 100px;

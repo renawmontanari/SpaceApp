@@ -7,10 +7,19 @@ import Imagem from "./Imagem";
 const GaleriaContainer = styled.div`
     display: flex;
     gap: 24px;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        gap: 16px;
+    }
 `
 
 const SecaoFluida = styled.section`
     flex-grow: 1;
+
+    @media (max-width: 768px) {
+        flex-grow: unset;
+    }
 `
 
 const ImagensContainer = styled.section`
@@ -18,6 +27,15 @@ const ImagensContainer = styled.section`
     justify-content: space-between;
     flex-wrap: wrap;
     gap: 24px;
+
+    @media (max-width: 768px) {
+        gap: 16px;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+        gap: 12px;
+    }
 `
 
 const Galeria = ({ fotos = [], aoFotoSelecionada, aoAlternarFavorito, setTag }) => {
