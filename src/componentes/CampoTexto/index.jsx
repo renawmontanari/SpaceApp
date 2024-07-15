@@ -19,6 +19,14 @@ const CampoTextoEstilizado = styled.input`
     font-weight: 400;
     font-size: 20px;
     line-height: 20px;
+
+    @media (max-width: 768px) {
+        width: 100%;
+    }
+
+    @media (max-width: 480px) {
+        width: calc(100% - 70px); // Ajuste considerando o espaço do ícone
+    }
 `;
 
 const IconeLupa = styled.img`
@@ -27,6 +35,13 @@ const IconeLupa = styled.img`
     right: 10px;
     width: 38px;
     height: 38px;
+
+    @media (max-width: 480px) {
+        top: 9px;
+        right: 9px;
+        width: 32px;
+        height: 32px;
+    }
 `;
 
 const CampoTexto = ({ setFiltro }) => {
