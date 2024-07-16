@@ -34,7 +34,7 @@ const ImagensContainer = styled.section`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         height: 325px;
         flex-wrap: nowrap;
         flex-direction: row;

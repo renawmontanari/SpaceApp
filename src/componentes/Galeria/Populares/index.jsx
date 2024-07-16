@@ -12,7 +12,7 @@ const ColunaFotos = styled.section`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         flex-direction: row;
         overflow-y: auto;
         gap: 8px;
@@ -50,7 +50,7 @@ const Botao = styled.button`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         padding: 8px 12px;
         font-size: 16px;
     }

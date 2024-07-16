@@ -12,7 +12,7 @@ const ListaEstilizada = styled.ul`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
     }
 `;
 
@@ -21,7 +21,7 @@ const Aside = styled.aside`
         width: 410px;
 
         nav {
-            width: 410px;
+            width: 400px;
         }
     }
 `

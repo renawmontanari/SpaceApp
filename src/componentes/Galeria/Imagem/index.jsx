@@ -44,7 +44,7 @@ const Figure = styled.figure`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         height: 200px;
 
         figcaption {
