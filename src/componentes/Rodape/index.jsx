@@ -9,6 +9,18 @@ const RodapeEstilizado = styled.footer`
     background-color: #04244F;
     padding: 22px;
     box-sizing: border-box;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 50px;
+    }
+
+    @media (max-width: 480px) {
+        align-items: center;
+        gap: 10px;
+        padding: 16px;
+    }
 `;
 
 const IconeContainer = styled.ul`
@@ -18,6 +30,10 @@ const IconeContainer = styled.ul`
     li {
         display: inline-block;
         margin-right: 32px;
+
+        @media (max-width: 480px) {
+            margin-right: 16px;
+        }
     }
 `;
 
@@ -25,6 +41,14 @@ const RodapeTexto = styled.p`
     font-size: 16px;
     color: white;
     margin: 0;
+
+    @media (max-width: 768px) {
+        font-size: 14px;
+    }
+
+    @media (max-width: 480px) {
+        font-size: 12px;
+    }
 `;
 
 const Rodape = () => {
