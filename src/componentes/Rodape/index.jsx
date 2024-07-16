@@ -17,6 +17,7 @@ const RodapeEstilizado = styled.footer`
     }
 
     @media (max-width: 480px) {
+        width: 410px;
         align-items: center;
         gap: 10px;
         padding: 16px;
