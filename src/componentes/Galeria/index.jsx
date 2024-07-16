@@ -12,6 +12,7 @@ const GaleriaContainer = styled.div`
         flex-direction: column;
         gap: 16px;
     }
+
 `
 
 const SecaoFluida = styled.section`
@@ -33,7 +34,11 @@ const ImagensContainer = styled.section`
     }
 
     @media (max-width: 480px) {
-        flex-direction: column;
+        width: 410px;
+        height: 325px;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        overflow-y: auto;
         gap: 12px;
     }
 `

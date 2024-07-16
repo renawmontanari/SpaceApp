@@ -30,6 +30,10 @@ const AppContainer = styled.div`
   @media (max-width: 768px) {
       padding: 0 8px;
   }
+
+  @media (max-width: 480px) {
+      width: 408px;
+  }
 `
 
 const MainContainer = styled.main`
@@ -39,6 +43,10 @@ const MainContainer = styled.main`
   @media (max-width: 768px) {
       flex-direction: column;
       gap: 16px;
+  }
+
+  @media (max-width: 480px) {
+      width: 410px;
   }
 `
 

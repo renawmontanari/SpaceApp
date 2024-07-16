@@ -45,9 +45,13 @@ const Figure = styled.figure`
 
     @media (max-width: 480px) {
         width: 410px;
-        
+        height: 200px;
+
         figcaption {
             padding: 8px;
+            width: 380px;
+            height: 310px;
+
             h3,
             h4 {
                 font-size: 12px;

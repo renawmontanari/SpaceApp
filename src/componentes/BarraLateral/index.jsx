@@ -12,13 +12,23 @@ const ListaEstilizada = styled.ul`
     }
 
     @media (max-width: 480px) {
-        width: 100%;
+        width: 410px;
     }
 `;
 
+const Aside = styled.aside`
+    @media (max-width: 480px) {
+        width: 410px;
+
+        nav {
+            width: 410px;
+        }
+    }
+`
+
 const BarraLateral = () => {
     return (
-        <aside>
+        <Aside>
             <nav>
                 <ListaEstilizada>
                     <ItemNavegacao 
@@ -58,7 +68,7 @@ const BarraLateral = () => {
                     </ItemNavegacao>
                 </ListaEstilizada>
             </nav>
-        </aside>
+        </Aside>
     )
 }
 

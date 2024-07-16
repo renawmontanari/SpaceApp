@@ -20,11 +20,32 @@ const DialogEstilizado = styled.dialog`
     width: 1156px;
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1156px) {
+        width: 90%;
+    }
+
+    @media (max-width: 768px) {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 80%;
+    }
+
     form {
         button {
             position: relative;
             top: 20px;
             right: 60px;
+
+            @media (max-width: 768px) {
+                top: 10px;
+                right: 20px;
+            }
+
+            @media (max-width: 480px) {
+                top: 5px;
+                right: 10px;
+            }
         }
     }
 `;
