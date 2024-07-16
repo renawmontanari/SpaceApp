@@ -18,7 +18,7 @@ const FiguraEstilizada = styled.figure`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         min-height: 200px;
         border-radius: 10px;
     }
