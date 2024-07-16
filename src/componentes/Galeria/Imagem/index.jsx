@@ -45,10 +45,9 @@ const Figure = styled.figure`
 
     @media (max-width: 480px) {
         width: 410px;
-
+        
         figcaption {
             padding: 8px;
-
             h3,
             h4 {
                 font-size: 12px;
@@ -65,6 +64,10 @@ const Rodape = styled.footer`
     @media (max-width: 768px) {
         flex-direction: column;
         align-items: flex-start;
+    }
+
+    @media (max-width: 480px) {
+        flex-direction: row;
     }
 `
 
