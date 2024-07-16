@@ -54,7 +54,7 @@ const Div = styled.div`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         overflow-y: auto;
     }
 `

@@ -10,7 +10,7 @@ const Titulo = styled.h2`
     }
 
     @media (max-width: 480px) {
-        width: 410px;
+        width: 400px;
         font-size: 24px;
         text-align: center;
     }
