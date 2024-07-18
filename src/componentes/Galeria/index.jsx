@@ -13,6 +13,10 @@ const GaleriaContainer = styled.div`
         gap: 16px;
     }
 
+    @media (max-width: 480px) {
+        width: 400px;
+    }
+
 `
 
 const SecaoFluida = styled.section`
