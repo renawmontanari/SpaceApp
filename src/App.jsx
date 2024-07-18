@@ -42,6 +42,7 @@ const MainContainer = styled.main`
   gap: 24px;
 
   @media (max-width: 768px) {
+      width: 768px;
       flex-direction: column;
       gap: 16px;
   }
@@ -57,6 +58,7 @@ const ConteudoGaleria = styled.section`
   flex-grow: 1;
 
   @media (max-width: 768px) {
+    width: 768px;
     flex-direction: column;
   }
 `
