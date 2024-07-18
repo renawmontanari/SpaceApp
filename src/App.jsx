@@ -28,7 +28,8 @@ const AppContainer = styled.div`
   }
 
   @media (max-width: 768px) {
-      padding: 0 8px;
+    width: 768px;
+    padding: 0 8px;
   }
 
   @media (max-width: 480px) {
@@ -62,7 +63,7 @@ const ConteudoGaleria = styled.section`
 
 const App = () => {
   const [fotosDaGaleria, setFotosDaGaleria] = useState(fotos);
-  const [fotoSelecionada, setFotoSelecionada] = useState(null); 
+  const [fotoSelecionada, setFotoSelecionada] = useState(null);
   const [filtro, setFiltro] = useState('');
   const [tag, setTag] = useState(0);
 
@@ -88,33 +89,33 @@ const App = () => {
         favorita: fotosDaGaleria.id === foto.id ? !foto.favorita : fotosDaGaleria.favorita
       }
     }))
-  } 
+  }
 
   return (
     <FundoGradiente>
       <EstilosGlobais />
       <AppContainer>
-        <Cabecalho 
-          filtro={filtro} 
-          setFiltro={setFiltro} 
+        <Cabecalho
+          filtro={filtro}
+          setFiltro={setFiltro}
         />
         <MainContainer>
           <BarraLateral />
           <ConteudoGaleria>
-            <Banner 
-              texto="A galeria mais completa de fotos do espaço!" 
+            <Banner
+              texto="A galeria mais completa de fotos do espaço!"
               backgroundImage={bannerBackground}
             />
-            <Galeria 
-              aoFotoSelecionada={foto => setFotoSelecionada(foto)} 
+            <Galeria
+              aoFotoSelecionada={foto => setFotoSelecionada(foto)}
               aoAlternarFavorito={aoAlternarFavorito}
-              fotos={fotosDaGaleria} 
+              fotos={fotosDaGaleria}
               setTag={setTag}
             />
           </ConteudoGaleria>
         </MainContainer>
       </AppContainer>
-      <ModalZoom 
+      <ModalZoom
         foto={fotoSelecionada}
         aoFechar={() => setFotoSelecionada(null)}
         aoAlternarFavorito={aoAlternarFavorito}

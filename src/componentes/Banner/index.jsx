@@ -13,6 +13,7 @@ const FiguraEstilizada = styled.figure`
     background-size: cover;
 
     @media (max-width: 768px) {
+        width: 754px;
         min-height: 250px;
         border-radius: 15px;
     }
