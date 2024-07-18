@@ -48,7 +48,7 @@ const MainContainer = styled.main`
   }
 
   @media (max-width: 480px) {
-      width: 410px;
+      width: 400px;
   }
 `
 
@@ -60,6 +60,10 @@ const ConteudoGaleria = styled.section`
   @media (max-width: 768px) {
     width: 768px;
     flex-direction: column;
+  }
+
+  @media (max-width: 480px) {
+    width: 400px;
   }
 `
 
